@@ -30,7 +30,7 @@ jobs:
         uses: cla-assistant/github-action@v2.1.2-beta
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
-          PERSONAL_ACCESS_TOKEN : ${{ secrets.PERSONAL_ACCESS_TOKEN }}
+          PERSONAL_ACCESS_TOKEN : ${{ secrets.ZZH_T_CLA }}
         with:
           path-to-signatures: 'signatures/version1/cla.json'
           path-to-document: 'https://github.com/apolloconfig/apollo-community/blob/master/CLA.md' # e.g. a CLA or a DCO document
