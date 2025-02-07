@@ -31,9 +31,10 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
           PERSONAL_ACCESS_TOKEN : ${{ secrets.ZZH_T_CLA }}
+          ZZH_TEST_ENV : "helloword"
         with:
-          path-to-signatures: 'signatures/version1/cla.json'
-          path-to-document: 'https://github.com/apolloconfig/apollo-community/blob/master/CLA.md' # e.g. a CLA or a DCO document
+          path-to-signatures: 'signatures/version1/cla_new.json'
+          # path-to-document: 'https://github.com/apolloconfig/apollo-community/blob/master/CLA.md' # e.g. a CLA or a DCO document
           # branch should not be protected
           branch: 'main'
           allowlist: dependabot,bot*,github-actions
