@@ -36,8 +36,6 @@ jobs:
       - name: wait opengemini started
         run: sleep 10
       - name: setup ts-trace
-        run: go install github.com/openGemini/observability/trace/cmd/ts-trace@latest
-      - name: run ts-trace
-        run: ts-trace &
+        run: bash run_trace.sh
       - name: unit tests
         run: bash zzhtest.sh
